@@ -1,1 +1,148 @@
-hsdha
+html
+----------------
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>SideNavbar template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <header>
+        <label for="">
+            <i class="fas fa-bars" id="sidebar_btnn"></i>
+        </label>
+    </header>
+    <!--Sidebar-->
+    <div class="sidebar">
+        <a href="#"><i class="fas fa-bars" id="sidebar_btn"></i></a>
+        <a href="#"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+        <a href="#"><i class="fas fa-table" ></i><span>Tables</span></a>
+        <a href="#"><i class="fas fa-th" ></i><span>Forms</span></a>
+        <a href="#"><i class="fas fa-info-circle" ></i><span>About</span></a>
+        <a href="#"><i class="fas fa-cog" ></i><span>Settings</span></a>
+    </div>
+
+</body>
+
+
+
+
+
+
+css--------------------------
+---------------------------------------------
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto",sans-serif;
+}
+header{
+    position:fixed;
+}
+.left_area h3{
+    color: #fff;
+    margin: 0;
+    font-size: 22px;
+    font-weight: 900;
+
+}
+.left_area span{
+    color: #1DC4E7;
+
+}
+.logout_btn{
+    padding: 5px;
+    background: #19B3D3;
+    text-decoration: none;
+    float: right;
+    margin-top: -30px;
+    margin-right: 40px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.5s;
+    transition-property: background;
+}
+.logout_btn:hover{
+    background: #0D9DBB;
+}
+
+.sidebar{
+    background: #2F323A;
+    margin-top: -20px;
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    transition:0.5s;
+    transition-property: left;
+}
+
+.sidebar a{
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition:0.5s;
+    transition-property: background;
+}
+
+.sidebar a:hover{
+    background: #19B3D3;
+}
+
+.sidebar i{
+    padding-right: 10px;
+}
+
+label #sidebar_btn{
+    z-index: 1;
+    color: #fff;
+    position: fixed;
+    cursor: pointer;
+    left: 40px;
+    font-size: 20px;
+    margin-top: 14px;
+    margin:5px 0;
+}
+
+#check:checked ~ .sidebar{
+    left:-190px;
+}
+#check:checked ~ .sidebar a i span{
+    display: none;
+}
+#check:checked ~ .sidebar a{
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://www.youtube.com/watch?v=M-pil5oHw0w
+
